@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvPantalla"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#EEEEEE"
+        android:gravity="center_vertical|end"
+        android:padding="12dp"
+        android:text="0"
+        android:textSize="40sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:stretchColumns="*">
+
+        <TableRow>
+            <Button android:layout_width="wrap_content" android:layout_height="80dp" android:onClick="onNumero" android:text="7" android:textSize="24sp" />
+            <Button android:layout_width="wrap_content" android:layout_height="80dp" android:onClick="onNumero" android:text="8" android:textSize="24sp" />
+            <Button android:layout_width="wrap_content" android:layout_height="80dp" android:onClick="onNumero" android:text="9" android:textSize="24sp" />
+            <Button android:layout_width="wrap_content" android:layout_height="80dp" android:onClick="onOperador" android:text="/" android:textSize="24sp" />
+        </TableRow>
+        <TableRow>
+            <Button android:layout_width="wrap_content" android:layout_height="80dp" android:onClick="onNumero" android:text="4" android:textSize="24sp" />
+            <Button android:layout_width="wrap_content" android:layout_height="80dp" android:onClick="onNumero" android:text="5" android:textSize="24sp" />
+            <Button android:layout_width="wrap_content" android:layout_height="80dp" android:onClick="onNumero" android:text="6" android:textSize="24sp" />
+            <Button android:layout_width="wrap_content" android:layout_height="80dp" android:onClick="onOperador" android:text="*" android:textSize="24sp" />
+        </TableRow>
+        <TableRow>
+            <Button android:layout_width="wrap_content" android:layout_height="80dp" android:onClick="onNumero" android:text="1" android:textSize="24sp" />
+            <Button android:layout_width="wrap_content" android:layout_height="80dp" android:onClick="onNumero" android:text="2" android:textSize="24sp" />
+            <Button android:layout_width="wrap_content" android:layout_height="80dp" android:onClick="onNumero" android:text="3" android:textSize="24sp" />
+            <Button android:layout_width="wrap_content" android:layout_height="80dp" android:onClick="onOperador" android:text="-" android:textSize="24sp" />
+        </TableRow>
+        <TableRow>
+            <Button android:layout_width="wrap_content" android:layout_height="80dp" android:onClick="onNumero" android:text="0" android:textSize="24sp" />
+            <Button android:layout_width="wrap_content" android:layout_height="80dp" android:onClick="onNumero" android:text="." android:textSize="24sp" />
+            <Button android:layout_width="wrap_content" android:layout_height="80dp" android:onClick="onClear" android:text="C" android:textSize="24sp" />
+            <Button android:layout_width="wrap_content" android:layout_height="80dp" android:onClick="onOperador" android:text="+" android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_span="4"
+                android:onClick="onIgual"
+                android:text="="
+                android:textSize="24sp" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
